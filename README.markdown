@@ -35,7 +35,9 @@ The fpJSHelpersPlugin is a Symfony 1.x plugin that allows to add JS libs indepen
 _app.yml_
 
     all:
-      js_remote_libs:
+      libs:# all "min" versions must have original version!!!
+        debug: false
+        local_only: false
         jquery:
           main:     'jquery-1.7.1.min.js'
           validate: 'jquery.validate-1.9.min.js'
@@ -43,6 +45,13 @@ _app.yml_
           main:    'knockout-2.1.0.min.js'
           mapping: 'knockout.mapping-latest.min.js'
         simple: 'simple.js'
+
+      remote_libs: # would be get from remote CDN
+        jquery:
+          main:     'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js'
+          validate: 'https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js'
+        ko:
+          main: 'https://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js'
 
 _web folder_
 

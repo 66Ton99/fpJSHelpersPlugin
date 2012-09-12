@@ -21,6 +21,7 @@ function js_add($args, $isFirst = false) {
    * Example:
    * js: # all "min" versions must have original version!!!
    *  debug: true
+   *  local_only: true
    *  libs:
    *    jquery:
    *      main: 'jquery-1.7.1.min.js'
