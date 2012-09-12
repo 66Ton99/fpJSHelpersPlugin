@@ -22,6 +22,8 @@ The fpJSHelpersPlugin is a Symfony 1.x plugin that allows to add JS libs indepen
 
 ### Enable it
 
+_ProjectConfiguration.class.php_
+
     class ProjectConfiguration extends sfProjectConfiguration
     {
       public function setup()
@@ -29,6 +31,19 @@ The fpJSHelpersPlugin is a Symfony 1.x plugin that allows to add JS libs indepen
         $this->enablePlugins('fpJSHelpersPlugin');
       }
     }
+
+_settings.yml_
+
+    all:
+      .settings:
+        standard_helpers:       [Partial, Cache, I18N, JS]
+
+OR
+
+_PHP templates_
+
+    <?php use_helper('JS'); ?>
+
 
 ## Getting Started
 
