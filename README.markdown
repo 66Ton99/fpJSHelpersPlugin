@@ -46,30 +46,30 @@ _app.yml_
 
 _web folder_
 
-web
-  js
-    vendor
-      jquery
-        jquery-1.7.1.js
-        jquery-1.7.1.min.js
-        jquery.validate-1.9.js
-        jquery.validate-1.9.min.js
-      ko
-        knockout-2.1.0.js
-        knockout-2.1.0.min.js
-        knockout.mapping-latest.js
-        knockout.mapping-latest.min.js
-      simple.js
+    web
+      js
+        vendor
+          jquery
+            jquery-1.7.1.js
+            jquery-1.7.1.min.js
+            jquery.validate-1.9.js
+            jquery.validate-1.9.min.js
+          ko
+            knockout-2.1.0.js
+            knockout-2.1.0.min.js
+            knockout.mapping-latest.js
+            knockout.mapping-latest.min.js
+          simple.js
 
 
 _Using_
 
-js_add(
-  array(
-    'jquery-main',
-    'jquery-validate',
-    'ko-main',
-    'ko-mapping',
-    'simple',
-  )
-);
+    js_add(
+      array(
+        'jquery-main',
+        'jquery-validate',
+        'ko-main',
+        'ko-mapping',
+        'simple',
+      )
+    );
